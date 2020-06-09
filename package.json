@@ -1,0 +1,22 @@
+{
+  "name": "fylo-data-storage-component-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/app.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakash19090/fem_fylo_data_storage_component.git"
+  },
+  "author": "Akash Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aakash19090/fem_fylo_data_storage_component/issues"
+  },
+  "homepage": "https://github.com/aakash19090/fem_fylo_data_storage_component#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

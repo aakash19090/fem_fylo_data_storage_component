@@ -1,0 +1,9 @@
+body{
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    height: 100vh;
+    background: url('./images/bg-desktop.svg') no-repeat;
+    background-position: 0 380px;
+    background-color: $very_dark_blue;
+}

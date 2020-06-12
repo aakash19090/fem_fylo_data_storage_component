@@ -7,3 +7,106 @@ body{
     background-position: 0 380px;
     background-color: $very_dark_blue;
 }
+
+#main{
+    .comp_wrap{
+        margin-top: 119px;
+        @include flexbox;
+        @include align-items(flex-end);
+        @include justify-content(center);
+        .fylo_comp{
+            padding: 40px;
+            border-radius: 10px;
+            background-color: $dark_blue;
+            border-top-right-radius: 100px;
+            width: 350px;
+            .logo_img{
+                margin-bottom: 35px;
+                svg{
+                    display: block;
+                }
+            }
+            .icon_div{
+                .icon_list{
+                    @include flexbox;
+                    @include align-items(stretch);        
+                    
+                    .icon_li{
+                        background-color: $very_dark_blue;
+                        cursor: pointer;
+                        padding: 12px;
+                        border-radius: 6px;
+                        display: inline-block;
+                        margin-right: 15px;
+                        @include flexbox;
+                        @include align-items(center);
+                        @include justify-content(center);
+                    }
+                }
+            }
+        }
+        .usage_comp{
+            padding: 40px;
+            background-color: $dark_blue;
+            margin-left: 30px;
+            width: 540px;
+            border-radius: 10px;
+            .title{
+                color: $pale_blue;
+                font-weight: $font-regular;
+                font-weight: 400;
+                font-size: 13px;
+                letter-spacing: 0.5px;
+
+                .hl{
+                    font-weight: $font-bold;
+                }
+            }
+
+            .progress_bar{
+                margin-top: 20px;
+                height: 15px;
+                background-color: $very_dark_blue; 
+                padding: 2px;  
+                border-radius: 40px; 
+                position: relative;
+                .bar{
+                    height: 100%;
+                    border-radius: 40px;
+                    width: 80%;
+                    background-image: linear-gradient(to right, $main_gradient_bg_start, $main_gradient_bg_end);
+                    position: relative;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        padding: 4px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        @include transform(translateY(-50%));
+                    }
+                }
+
+                .min_limit{
+                    color: $pale_blue;
+                    font-size: 13px;
+                    font-weight: $font-bold;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    margin-top: 5px;
+                }
+                .max_limit{
+                    color: $pale_blue;
+                    font-size: 13px;
+                    font-weight: $font-bold;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

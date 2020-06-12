@@ -157,3 +157,120 @@ body {
   background: url("./images/bg-desktop.svg") no-repeat;
   background-position: 0 380px;
   background-color: #0c122c; }
+
+#main .comp_wrap {
+  margin-top: 119px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  #main .comp_wrap .fylo_comp {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #1d2c67;
+    border-top-right-radius: 100px;
+    width: 350px; }
+    #main .comp_wrap .fylo_comp .logo_img {
+      margin-bottom: 35px; }
+      #main .comp_wrap .fylo_comp .logo_img svg {
+        display: block; }
+    #main .comp_wrap .fylo_comp .icon_div .icon_list {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+      -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+      -webkit-align-items: stretch;
+      align-items: stretch; }
+      #main .comp_wrap .fylo_comp .icon_div .icon_list .icon_li {
+        background-color: #0c122c;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 6px;
+        display: inline-block;
+        margin-right: 15px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center; }
+  #main .comp_wrap .usage_comp {
+    padding: 40px;
+    background-color: #1d2c67;
+    margin-left: 30px;
+    width: 540px;
+    border-radius: 10px; }
+    #main .comp_wrap .usage_comp .title {
+      color: #dddbff;
+      font-weight: 400;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 0.5px; }
+      #main .comp_wrap .usage_comp .title .hl {
+        font-weight: 700; }
+    #main .comp_wrap .usage_comp .progress_bar {
+      margin-top: 20px;
+      height: 15px;
+      background-color: #0c122c;
+      padding: 2px;
+      border-radius: 40px;
+      position: relative; }
+      #main .comp_wrap .usage_comp .progress_bar .bar {
+        height: 100%;
+        border-radius: 40px;
+        width: 80%;
+        background-image: linear-gradient(to right, #ffa399, #ff4d97);
+        position: relative; }
+        #main .comp_wrap .usage_comp .progress_bar .bar:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          padding: 4px;
+          background-color: #fff;
+          border-radius: 50%;
+          -moz-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+      #main .comp_wrap .usage_comp .progress_bar .min_limit {
+        color: #dddbff;
+        font-size: 13px;
+        font-weight: 700;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 5px; }
+      #main .comp_wrap .usage_comp .progress_bar .max_limit {
+        color: #dddbff;
+        font-size: 13px;
+        font-weight: 700;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 5px; }

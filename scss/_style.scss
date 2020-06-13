@@ -107,6 +107,15 @@ body{
                     width: 74%;
                     background-image: linear-gradient(to right, $main_gradient_bg_start, $main_gradient_bg_end);
                     position: relative;
+                    animation-name: example;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+
+                    @keyframes example {
+                        0%   {width: 0px;}
+                        100%   {width: 74%;}   
+                    }
+
                     &:after{
                         content: '';
                         position: absolute;

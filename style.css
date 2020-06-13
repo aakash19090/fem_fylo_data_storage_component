@@ -279,7 +279,16 @@ body {
         border-radius: 40px;
         width: 74%;
         background-image: linear-gradient(to right, #ffa399, #ff4d97);
-        position: relative; }
+        position: relative;
+        animation-name: example;
+        animation-duration: 1s;
+        animation-timing-function: linear; }
+
+@keyframes example {
+  0% {
+    width: 0px; }
+  100% {
+    width: 74%; } }
         #main .comp_wrap .usage_comp .progress_bar .bar:after {
           content: '';
           position: absolute;
